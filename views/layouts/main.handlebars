@@ -7,19 +7,20 @@
 	<title>Find A Church!</title>
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="/assets/js/churches.js"></script>
-	<script src= "https://maps.googleapis.com/maps/api/geocode/json?latlng=33.4483771,-112.0740373&key=AIzaSyBWO_kWkrwZyWjdZLAczd6qUJrSDEgcLEc"></script>
+	<!-- <script src= "https://maps.googleapis.com/maps/api/geocode/json?latlng=33.4483771,-112.0740373&key=AIzaSyBWO_kWkrwZyWjdZLAczd6qUJrSDEgcLEc"></script> -->
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
-        height: 100%;
+        height: 50%;
+        width: 50%;
       }
       /* Optional: Makes the sample page fill the window. */
       	html, body {
         height: 100%;
-        margin: 0;
         padding: 0;
-      }*/
+      }
+
     </style>
   </head>
   <body>
@@ -29,8 +30,8 @@
       function initMap() {
 
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 12,
-          center: {lat: 33.4483771, lng: -112.0740373}
+          zoom: 8,
+          center: {lat: 33.3560437, lng: -111.7897358}
         });
 
         // Create an array of alphabetical characters used to label the markers.
@@ -52,7 +53,7 @@
             {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
       }
       var locations = [
-        {lat: 33.4483771, lng: -112.0740373}
+        {lat: 33.7002602, lng: -111.8860388}
         
       ]
     </script>
