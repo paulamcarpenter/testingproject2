@@ -1,4 +1,11 @@
-// Make sure we wait to attach our handlers until the DOM is fully loaded.
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 33.448376, lng: -112.074036},
+    zoom: 5
+  });
+}
+
 $(function() {
   $(".change-sleep").on("click", function(event) {
     var id = $(this).data("id");
@@ -20,7 +27,6 @@ $(function() {
       }
     );
   });
-
   $(".create-form").on("submit", function(event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();

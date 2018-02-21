@@ -18,6 +18,15 @@ connection.connect(function(err) {
   console.log("connected as id " + connection.threadId);
 });
 
+// Link to Google Maps API:
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 33.448376, lng: -112.074036},
+    zoom: 5
+  });
+}
+
 // Export connection for our ORM to use.
 module.exports = connection;
 
