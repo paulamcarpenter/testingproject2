@@ -1,2 +1,3 @@
 INSERT INTO churches (id, name, address, city, state, zip, url, size, denomination) VALUES (0, "Highland Church", "9050 E Pinnacle Peak Rd", "Scottsdale", "AZ", 85255, "highlandschurch.org", 1500, "Christian");
-
+INSERT INTO churches (id, name, address, city, state, zip, url, size, denomination) VALUES (0, "St Anne Roman Catholic Parish", "440 E Elliot Rd", "Gilbert", "AZ", 85234, "stanneaz.org", 1500, "Roman Catholic");
+INSERT INTO churches (id, name, address, city, state, zip, url, size, denomination) VALUES (0, "The Church of Jesus Christ of Latter-Day Saints", "3301 S Greenfield Rd", "Gilbert", "AZ", 85229, "lds.org", 10500, "Mormon");

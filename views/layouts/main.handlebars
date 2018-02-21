@@ -30,7 +30,7 @@
       function initMap() {
 
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 8,
+          zoom: 11,
           center: {lat: 33.3560437, lng: -111.7897358}
         });
 
@@ -53,13 +53,15 @@
             {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
       }
       var locations = [
-        {lat: 33.7002602, lng: -111.8860388}
+        {lat: 33.7002602, lng: -111.8860388},
+        {lat: 33.351169, lng: -111.780032},
+        {lat: 33.291222, lng: -111.7375275}
         
       ]
     </script>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
     </script>
-    <script async defer
+    <script async defer,
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAe8kXAI8D611-kFHxU_ve3BlPZrkfUTFE&callback=initMap">
     </script>
   </body>
